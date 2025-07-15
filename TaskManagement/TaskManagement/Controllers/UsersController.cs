@@ -14,7 +14,7 @@ namespace TaskManagement.API.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> CreateUser([FromBody] CreateUserCommand command)
         {
-            throw new Exception();
+            
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
